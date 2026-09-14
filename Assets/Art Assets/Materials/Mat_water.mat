@@ -1,0 +1,240 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6203065057361885224
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mat_water
+  m_Shader: {fileID: -6465566751694194690, guid: 0e8c404a0de0de44eb6342231e671f74,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _PEAKFOAMNOISE
+  - _USENOISE
+  - _USENOISEINNERFOAM
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    RenderType: Opaque
+  disabledShaderPasses: []
+  m_LockedProperties: _MaxHeight
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EdgeTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FoamTexture:
+        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTexture:
+        m_Texture: {fileID: 10307, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PeakFoam:
+        m_Texture: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondaryFoamTexture:
+        m_Texture: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VertexTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddSineTime: 0
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
+    - _AltMovement: 0
+    - _BaseFoamNoiseScale: 2.5
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 1
+    - _BumpScale: 1
+    - _CastShadows: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DetailAlbedoMapScale: 1
+    - _DetailNormalMapScale: 1
+    - _DoubleScale: 0.33
+    - _DoubleScrollMultiplier: 1
+    - _DstBlend: 0
+    - _DstBlendAlpha: 0
+    - _EdgeRotation: 2.2
+    - _EnableFresnal: 0
+    - _EnableGerstnerWave: 1
+    - _EnableGerstnerWave2: 1
+    - _EnableGerstnerWave3: 1
+    - _EnableVertexMovement: 1
+    - _EnvironmentReflections: 1
+    - _FoamStep: 0.63
+    - _FresnelPower: 2
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _HardEdgeStep: 0.93
+    - _InnerFoamNoiseScale: 1.8
+    - _InnerFoamRotation: 0
+    - _InvertMask: 0
+    - _MaskAngle: 0
+    - _MaxHeight: 2
+    - _Metallic: 0
+    - _OcclusionStrength: 1
+    - _PEAKFOAMNOISE: 1
+    - _Parallax: 0.005
+    - _PeakFoamScale: 0
+    - _PeakRotation: 0
+    - _PeakSharpness: 0
+    - _PeakSharpness2: 0
+    - _PeakSharpness3: 0.3
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _ScaleSpeed: 0.11
+    - _ScaleSpeed2: 0.12
+    - _ScaleSpeed3: 0.1
+    - _SecondaryFoamPower: 1
+    - _SecondaryFoamSpeed: 3
+    - _SineTimeScale: 1
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _Strength: 0
+    - _Surface: 0
+    - _SwapTextureChannels: 0
+    - _USENOISE: 1
+    - _USENOISEINNERFOAM: 1
+    - _UseDoubleFoam: 1
+    - _UseDoubleVoronoi: 0
+    - _UseHardEdge: 1
+    - _UseVoronoi: 0
+    - _V_InvertStrength: -1.28
+    - _V_Power: 3.98
+    - _VoronoiRotate: 0
+    - _VoronoiScale: 1
+    - _VoronoiSpeed: 1
+    - _WaveHeight: 0.3
+    - _WaveHeight2: 0.1
+    - _WaveHeight3: 0.2
+    - _WaveLength: 1
+    - _WaveLength2: 10
+    - _WaveLength3: 4.5
+    - _WorkflowMode: 1
+    - _ZTest: 4
+    - _ZWrite: 1
+    - _ZWriteControl: 0
+    m_Colors:
+    - _BaseColor: {r: 0, g: 0.3125, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DoubleOffset: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Double_IN: {r: 0.8, g: 1, b: 0, a: 0}
+    - _Double_Out: {r: -0.71, g: 1, b: 0, a: 0}
+    - _EdgeFoamRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _EdgeScroll: {r: 1.18, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FoamInRemap: {r: 5.8, g: 16.54, b: 0, a: 0}
+    - _FoamOutRemap: {r: -0.2, g: 0.05, b: 0, a: 0}
+    - _InnerFoamScroll: {r: 1.37, g: -0.5, b: 0, a: 0}
+    - _MaskCenter: {r: 0, g: 0, b: 0, a: 0}
+    - _PeakFoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _PeakFoamIn: {r: 0, g: 1, b: 0, a: 0}
+    - _PeakFoamOut: {r: 0, g: 1, b: 0, a: 0}
+    - _PeakFoamSmoothStep: {r: 0, g: 1, b: 0, a: 0}
+    - _PeakMovement: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _SecondaryFoamColor: {r: 1, g: 1, b: 1, a: 0}
+    - _SmoothTexture: {r: 0, g: 1, b: 0, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _V_RemapIn: {r: -0.3, g: 1.06, b: 0, a: 0}
+    - _V_RemapOut: {r: -0.24, g: 0.98, b: 0, a: 0}
+    - _VertexScroll: {r: 0, g: 0, b: 0, a: 0}
+    - _VoronoiScrollSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _WaveDirection: {r: 1, g: 0, b: 0, a: 0}
+    - _WaveDirection2: {r: 0, g: 1, b: 0, a: 0}
+    - _WaveDirection3: {r: 0, g: 0, b: 1, a: 0}
+    - _XYStrength: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
