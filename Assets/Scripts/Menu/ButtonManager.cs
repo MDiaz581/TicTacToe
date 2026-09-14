@@ -8,11 +8,13 @@ public class ButtonManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public GameObject spriteHover;
     public void OnPointerEnter(PointerEventData data)
     {
+        if(spriteHover == null) return;
         spriteHover.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData data)
     {
+        if(spriteHover == null) return;
         spriteHover.SetActive(false);
     }
 }
