@@ -10,10 +10,11 @@ public class PanelBehavior : MonoBehaviour
         X,
         O
     }
-
     [SerializeField] public PanelType panelType;
+
     private Renderer panelRenderer;
 
+    [Header("Panel Materials")]
     public Material mat_x;
     public Material mat_o;
 
@@ -22,29 +23,15 @@ public class PanelBehavior : MonoBehaviour
         panelRenderer = GetComponent<Renderer>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    private void PanelHit(int ID)
+    private void PanelHit(int ID) //Change to x or o depending on who's player ID hit it.
     {
         switch (ID)
         {
             case 0:
-                Debug.Log($"Player 1 hit");
                 panelType = PanelType.X;
                 panelRenderer.material = mat_x;
                 break;
             case 1:
-                Debug.Log("Player 2 hit");
                 panelType = PanelType.O;
                 panelRenderer.material = mat_o;
                 break;
@@ -61,8 +48,6 @@ public class PanelBehavior : MonoBehaviour
         {
             PanelHit(cb.playerID);
             Destroy(other.gameObject);
-        }
-
-        
+        }  
     }
 }

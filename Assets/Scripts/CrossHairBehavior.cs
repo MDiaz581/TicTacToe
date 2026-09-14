@@ -6,14 +6,19 @@ using Rewired;
 
 public class CrossHairBehavior : MonoBehaviour
 {
+    [Header("References")]
     private CharacterController cc;
     private Player player;
     [SerializeField] private int playerID;
     public GameObject bullet;
-    private Vector3 moveVector;
-    public float speed;
     public Transform firePoint;
+
+    [Header("Controls")]
+    private Vector3 moveVector;
     private bool b_fire;
+    
+    [Header("Player Variables")]
+    public float moveSpeed;
     public float bulletSpeed;
     public float fireCooldown;
     private bool canFire = false;
@@ -63,11 +68,12 @@ public class CrossHairBehavior : MonoBehaviour
         b_masterStopControl = true;
     }
 
+    //Basic movement using Unity's Character Controller
     private void Movement(Vector3 input)
     {
         input.Normalize();
 
-        Vector3 motion = input * speed * Time.deltaTime;
+        Vector3 motion = input * moveSpeed * Time.deltaTime;
 
         cc.Move(motion);
     }
@@ -77,14 +83,16 @@ public class CrossHairBehavior : MonoBehaviour
         if(canFire == false) return;
 
         GameObject bulletInstance = Instantiate(bullet, firePoint.position, firePoint.rotation);
+
         CannonballBehavior ballBehavior = bulletInstance.GetComponent<CannonballBehavior>();
         if(ballBehavior != null)
         {
-           ballBehavior.OnFire(bulletSpeed);
-           ballBehavior.playerID = playerID; 
+           ballBehavior.OnFire(bulletSpeed); //Apply speed to the bullet.
+           ballBehavior.playerID = playerID; //Give ID to the bullet, important for the panel when it checks who hit it.
         }
-        Invoke(nameof(ResetFire), fireCooldown);
-        canFire = false;
+        Invoke(nameof(ResetFire), fireCooldown); // Call function after cooldown
+
+        canFire = false; // Prevents refiring before cooldown ends
     }
 
     private void ResetFire()

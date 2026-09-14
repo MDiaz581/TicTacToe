@@ -16,15 +16,14 @@ public class CannonballBehavior : MonoBehaviour
         GameManager.TimerEnded -= DestroySelf;
     }
 
-
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
+        //Destroy after delay;
         Invoke("DestroySelf", 2f);
     }
 
